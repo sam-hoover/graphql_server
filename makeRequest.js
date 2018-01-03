@@ -45,14 +45,4 @@ let variables = {
 	pass: 'admin'
 };
 
-//makeGraphqlRequest(query, variables);
-
-
-composeFns = (...fns) => (...args) => fns.forEach(fn => fn && fn(...args));
-printOne = () => { console.log(1); }
-printTwo = () => { console.log(2); }
-printThree = () => { console.log(3); }
-printNumber = (number) => {console.log(number);}
-
-//composeFns(printNumber(1), printNumber(2), printNumber(3));
-composeFns(printOne, printTwo, printThree);
+makeGraphqlRequest(query, variables);

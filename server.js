@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(loggingMiddleware);
-app.use(authMiddleware);
+//app.use(authMiddleware);
 app.use(errorHandlingMiddleware);
 
 app.use('/graphql', graphqlHTTP({
